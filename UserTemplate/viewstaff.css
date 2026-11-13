@@ -1,0 +1,59 @@
+
+.table{
+    width: 150%;
+    height: 100%;
+    margin: auto;
+    background-color: grey;
+    border: 1;
+    margin: auto;
+     border-left: 0;
+     text-align:center;
+
+  
+    
+
+}
+h3{
+    color: brown;
+    text-align: center;
+    margin: auto;
+    font-size: 2em;
+    text-shadow: burlywood;
+    font-weight: 100;
+}
+th{
+    
+    
+    
+    color:green;
+    width:200px;
+	height:50px;
+     border-color:rgb(27, 27, 26) ;
+	border-bottom:0px;
+	background-color:grey;
+	text-align:center;
+    
+}
+
+.detail{
+  color: green;
+  text-align: center;
+  padding: 10px;
+}
+.dect{
+    color: green;
+    text-align: center;
+    padding: 10px;
+    margin: auto;
+    
+    
+}
+table thead{
+    margin: 0%;
+    width:10%;
+    height:100%;
+	font-size: 2em;
+	font-weight: bold;
+	color:green;
+    background-color: gray;
+}

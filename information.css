@@ -1,0 +1,87 @@
+body{
+		background-color: white;
+		margin: 0;
+
+	}
+	  table{
+      text-align:left;
+      width: 30%;
+      border-radius: 13px;
+      padding: 6px;
+      margin-left: 36%;
+      margin-right: 32%;
+      border: 1px;
+      
+     
+    }
+   
+    
+    table td{
+  
+      font-size: 1.3em;
+      font-weight:bold;
+      padding: 3px;
+      text-align: left;
+    }
+   
+	.form{
+      
+      justify-content: center;
+      margin: 0 auto;
+margin-top: 30px;
+      padding: 4px;
+	  
+    }
+    
+	.btn1{
+  margin-bottom:30px;
+  width:90px;
+  height:40px;
+  text-align: center;
+  background-color: white;
+
+  border: 2px solid green ;
+  border-radius: 15px;
+  font-weight:bold;
+  font-size: 1rem;
+  margin-top:30px ;
+  margin-left: 109%;
+  
+}
+.btn1:hover{
+  background-color: green;
+  border-color: white;
+  box-shadow: 3px 3px 3px 3px green;
+}
+    
+textarea{
+      width: 230px;
+      height:100px;
+      background-color: #f8f2f246;
+      border-radius: 10px;
+
+    }
+    textarea:hover{
+      border: 2px solid green;
+    }
+  .radio{
+  width:15px;
+  
+}
+.Cretext{
+      width:100px;
+      height:100px;
+      background-color: #f8f2f246;
+      border-radius: 15px;
+      font-size:1em;
+    
+    
+    }
+      
+    .Cretext:hover{
+      border: 2px solid green;
+    }
+    
+    
+    
+

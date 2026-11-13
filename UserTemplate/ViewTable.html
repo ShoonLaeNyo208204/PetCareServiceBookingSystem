@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="table.css">
+</head>
+<body>
+    <h3 class="viewh3">View Package List</h3>
+     
+      <table class="tablelist" border=1>
+
+		<thead class="viewheader">
+			<th>No</th>
+			<th>Package Name</th>
+			<th>Price</th>
+			<th>Description</th>
+            <th>Action</th>
+			  </thead>
+		<%
+			Class.forName("com.mysql.jdbc.Driver");
+			Connection dbcon = DriverManager.getConnection(
+					"jdbc:mysql://localhost/petcareservice", "root", "root");
+			System.out.println("Connect to Database!!");
+			Statement smnt = dbcon.createStatement();
+			String query3 = "Select * from  Package";
+			ResultSet result3 = smnt.executeQuery(query3);
+			int count=0;
+			while (result3.next()) {
+				count++;
+				//String No = result3.getString("P_id");
+				String Name = result3.getString("P_name");
+				String Price = result3.getString("P_price");
+				String Description = result3.getString("P_description");
+			
+		%>
+<tr>
+		<td><span style="font-weight:bold; color:black;"><%=count%> </span></td>
+		<td><span style="font-weight:bold; color:black;"> <%=Name%></span></td>
+		
+		<td><span style="font-weight:bold; color:black;"> <%=Price%></span></td>
+		<td><span style="font-weight:bold; color:black;"> <%=Description%></span></td>
+		
+            <td><a href="PackageEdit.jsp?P_id=<%=result3.getString("P_id")%>">
+             <input type="submit" value="dectivate" name="btndectivate/"></a>
+              <a href="PackageEdit.jsp?P_id=<%=result3.getString("P_id")%>" >
+              <input type="reset" value="Delete"/></a>
+              </td>
+
+			
+</tr>
+		<%
+			}
+		%>
+		<%
+			result3.close();
+			smnt.close();
+			dbcon.close();
+		%>
+	</table>
+
+</body>
+</html>

@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<!-- Coding By CodingNepal - codingnepalweb.com -->
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Pet Care Service Booking System</title>
+
+<!-- CSS -->
+<link rel="stylesheet" href="css/customerlogin.css">
+
+<!-- Boxicons CSS -->
+<link href='https://unpkg.com/boxicons@2.1.2/css/boxicons.min.css'
+	rel='stylesheet'>
+	 	
+
+</head>
+<body>
+<form action="customersignuppage.jsp" onsubmit="return validateForm()" method="post">
+
+	<section class="container forms">
+
+		<div class="form signup">
+			<div class="form-content">
+				<header>Signup</header>
+			<form action="customersignuppage.jsp" onsubmit="return validateForm()" method="post">
+					<div class="field input-field">
+						<input type="email" placeholder="email" name="email"
+							pattern="^[a-z]+[0-9]*@gmail.com$" class="input" required />
+					</div>
+
+
+				
+					<div class="field input-field">
+						<input type="password" name="password"
+							placeholder="Create password" class="password" id="password" required />
+					</div>
+
+					<div class="field input-field">
+						<input type="password" name="cpassword"
+							placeholder="Confirm password" id="cpassword" class="cpassword" required />
+
+					</div>
+
+					 <div class="field button-field">
+                        <input type="submit" value="Sign Up">
+                        
+                        </div>
+                    
+
+					</form>
+<div class="form-link">
+					<span>Already have an account?
+					 <a href="loginform.jsp">Login</a>
+					 </span>
+				</div>
+			</div>
+	</section>
+	<!-- JavaScript -->
+	<script>
+        function validateForm() {
+            var password = document.getElementById("password").value;
+            var confirmPassword = document.getElementById("cpassword").value;
+
+            if (password !== confirmPassword) {
+                alert("Passwords do not match!");
+                return false;
+            }
+            return true;
+        }
+    </script>
+	
+	<script src="js/customerlogin.js"></script>
+
+</body>
+</html>
